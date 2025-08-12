@@ -188,4 +188,5 @@ conn.close()
 ```
 
 + Run file and we got the flag:
-![alt text](image.png)
+
+<img width="743" height="178" alt="image" src="https://github.com/user-attachments/assets/e932991a-697e-4586-bc6b-a81da2513852" />
