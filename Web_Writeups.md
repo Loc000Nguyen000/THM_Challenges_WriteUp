@@ -12,8 +12,10 @@ ubuntu
 Confirm flag
 ```
 
-![alt text](image-2.png)
-![alt text](image-4.png)
+<img width="1668" height="582" alt="image-2" src="https://github.com/user-attachments/assets/7eea878e-b499-44bf-a296-f4948029bf13" />
+
+<img width="1668" height="582" alt="image-4" src="https://github.com/user-attachments/assets/4c329a33-2d68-416e-9310-c42b68353b14" />
+
 
 ***Note: ; (semicolon) allows multiple commands sequentially. So used it to escape the first command that ran the .py script, then executed my queries.***
 
@@ -72,6 +74,6 @@ if __name__ == "__main__":
 + The vuln appear in `command` and `os.system`.
 + Thinking `Command Injection` and potential param are `filepath` or `recipient` .
 + Found the syntax to exploit `Command Injection` and `RCE` that is  `$()`.
-![alt text](image-5.png) 
+<img width="3122" height="1282" alt="image-5" src="https://github.com/user-attachments/assets/8f52056e-3bf0-4010-bc1d-9efbd17f2ee7" />
 
 ***Note: `$(command)` is “command substitution”.  As you seem to understand, it runs the command, captures its output, and inserts that into the command line that contains the $()***
