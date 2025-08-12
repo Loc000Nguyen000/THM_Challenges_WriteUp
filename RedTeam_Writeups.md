@@ -85,3 +85,20 @@ DUMP\DarkInjector
 + We can just go check the flag from now:
 
 <img width="819" height="537" alt="image-11" src="https://github.com/user-attachments/assets/a25e68db-71cb-41bb-b9dc-e27e36b7f773" />
+
+### Task 37:
++ First the nmap scan reveal ssh and http
+<img width="374" height="40" alt="image" src="https://github.com/user-attachments/assets/4401f0bf-27d0-4de2-97fe-0be1bdb0ef11" />
+<img width="1900" height="526" alt="image" src="https://github.com/user-attachments/assets/da24b710-7f23-48ee-9695-3161792762b6" />
++ The landing page didn’t give anything interesting
+<img width="1919" height="830" alt="image" src="https://github.com/user-attachments/assets/f9e84f34-92e2-4d5a-b3d7-35af1ed63de1" />
++ We found various directories, admin and backup are interesting.
+<img width="969" height="626" alt="image" src="https://github.com/user-attachments/assets/b3f2c5f7-8a2d-440d-ab90-87bf651ac790" />
+<img width="1916" height="976" alt="image" src="https://github.com/user-attachments/assets/5bb951a4-f9df-4224-9e83-bf9f490f4b2f" />
+<img width="854" height="424" alt="image" src="https://github.com/user-attachments/assets/fb9c0c63-0507-49bb-b7c1-9c6c4e329787" />
++ Archive is password protected, tried to crack it with fcrackzip
+<img width="1459" height="853" alt="image" src="https://github.com/user-attachments/assets/38f38ca7-7241-407d-88e8-36aa730f576d" />
+<img width="651" height="109" alt="image" src="https://github.com/user-attachments/assets/85979c5e-7729-4102-be1e-fe56a8e58641" />
+<img width="956" height="519" alt="image" src="https://github.com/user-attachments/assets/acf218e0-6db4-426b-a24c-3c0c32ef290c" />
+
+
