@@ -2,17 +2,21 @@
 + By checking the mail and try to send a pdf, we could see that cipher only accept docx or docm file.
 + We can generate a malicious docm file using this module of msf :
 
-![alt text](image.png)
+<img width="860" height="445" alt="image" src="https://github.com/user-attachments/assets/43540a31-8ed9-44aa-8c71-969106f42971" />
+
 
 + Then setting up the handler and send the malicious docm, we get a callback :
 
-![alt text](image-1.png)
+<img width="866" height="560" alt="image-1" src="https://github.com/user-attachments/assets/76284d1b-3993-4691-879d-badcf5144aad" />
+
 
 + We can see we are admin:
-![alt text](image-2.png)
+<img width="337" height="52" alt="image-2" src="https://github.com/user-attachments/assets/71a0934a-21c8-42c1-a790-58e9fc42f3b0" />
+
 
 + Then go on the admin desktop and catch the flag:
-![alt text](image-3.png)
+<img width="816" height="226" alt="image-3" src="https://github.com/user-attachments/assets/74913add-aa33-406e-adbf-e2e317a6b313" />
+
 
 ### Task 15:
 + First I check the hashes i can extract from the mimikatz extract (we want NTLM hashes):
@@ -44,33 +48,40 @@ DUMP\DarkInjector
 ```
 
 + Then run nmap to check for winrm:
-![alt text](image-4.png)
+<img width="736" height="113" alt="image-4" src="https://github.com/user-attachments/assets/3646c206-9543-486f-b1f1-6743d01352cd" />
+
 
 + Then try to connect with evilwinrm, Administrator and Cipher can’t use winrm but others can.
 + Checked all groups and privs for the available users. And DarkInjector is in the admin group. 
 
-![alt text](image-5.png)
+<img width="820" height="580" alt="image-5" src="https://github.com/user-attachments/assets/543e5118-19a7-4b8e-b8b8-ff8ba7765768" />
+
 
 + So I can just go into the Administrator folder and grab the flag :
-![alt text](image-6.png)
+<img width="729" height="311" alt="image-6" src="https://github.com/user-attachments/assets/a855a033-5a60-4b55-9a5c-8c4f7e846cb6" />
+
 
 ### Task 16:
 + First of all we take the informations given in the mail:
 
-![alt text](image-7.png)
+<img width="465" height="163" alt="image-7" src="https://github.com/user-attachments/assets/9d0c11d8-0dad-48ae-adc0-9215f3f93c71" />
+
 
 + The only important thing here is the w10 x64 exe format, we’ll use these information with venom to craft a payload:
 
-![alt text](image-8.png)
+<img width="811" height="196" alt="image-8" src="https://github.com/user-attachments/assets/83cd8e9d-4c41-42c7-b0ef-280dee64c939" />
+
 
 + Then setup the handler in msf :
 
-![alt text](image-9.png)
+<img width="829" height="548" alt="image-9" src="https://github.com/user-attachments/assets/b61ac2c3-13ce-4a5d-bd3f-25c1a289e4cb" />
+
 
 + Then send the malicious exe, wait a bit and we got an admin shell:
 
-![alt text](image-10.png)
+<img width="811" height="125" alt="image-10" src="https://github.com/user-attachments/assets/1dd7ab79-4c35-4bb7-8c14-0db69f160905" />
+
 
 + We can just go check the flag from now:
 
-![alt text](image-11.png)
+<img width="819" height="537" alt="image-11" src="https://github.com/user-attachments/assets/a25e68db-71cb-41bb-b9dc-e27e36b7f773" />
