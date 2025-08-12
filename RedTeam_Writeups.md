@@ -104,13 +104,18 @@ DUMP\DarkInjector
 + Now we have admin access and can see cms version
 <img width="1917" height="992" alt="image" src="https://github.com/user-attachments/assets/f3ea63a4-99c7-49cf-b748-d23498b3bada" />
 + Got a CVE, we need to reformat the code to exploit it but we can now inject (almost) any php code we want.
-https://www.exploit-db.com/exploits/52039
-+ Got a CVE, we need to reformat the code to exploit it but we can now inject (almost) any php code we want.
-No direct rce here, we can’t get any interaction with system via php
+  https://www.exploit-db.com/exploits/52039
+
++ Got a CVE, we need to reformat the code to exploit it but we can now inject (almost) any php code we want. No direct rce here, we can’t get any interaction with system via php
+
 <img width="1915" height="154" alt="image" src="https://github.com/user-attachments/assets/ff9fd016-38ad-4bd8-8293-ec42eca4f462" />
+
 + And our revshell instantly crash, got a quick callback from our side but it closes instantly, finally passed through with a meterpreter php bind shell payload.
+
 <img width="863" height="271" alt="image" src="https://github.com/user-attachments/assets/fb633a0f-d384-445c-8a48-5c3f871d6072" />
+
 + While enumerating finding that we can edit authorized_keys for the user void.
 + Just replace it with a custom one including my own ssh key and I can log as void
+
 <img width="877" height="656" alt="image" src="https://github.com/user-attachments/assets/627d3337-3b3f-47fc-b3ac-35586cbc1749" />
 <img width="947" height="560" alt="image" src="https://github.com/user-attachments/assets/b02195dc-0d84-4d7e-9528-193bb08357fe" />
